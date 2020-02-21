@@ -5,8 +5,8 @@
 // @description  Данный скрипт позволяет скачивать литературу из библиотеки IPR Books в формате PDF. Для этого необходимо перейти в режим чтения книги и нажать соответствующую кнопку на панели инструментов.
 // @author       DeveloperOfEverything
 // @match        http://www.iprbookshop.ru/epd-reader*
-// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/blob/master/IprDownloader.js
-// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/blob/master/IprDownloader.js
+// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/IprDownloader.js
+// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/IprDownloader.js
 // @grant        none
 // ==/UserScript==
 
