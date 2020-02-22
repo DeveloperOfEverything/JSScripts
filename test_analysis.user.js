@@ -5,8 +5,8 @@
 // @description  try to take over the world!
 // @author       You
 // @match        docs.google.com/forms*
-// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/TextAnalysis.js
-// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/TextAnalysis.js
+// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/test_analysis.meta.js
+// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/test_analysis.user.js
 // @grant        none
 // ==/UserScript==
 
