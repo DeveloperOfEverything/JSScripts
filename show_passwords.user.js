@@ -15,8 +15,8 @@
 // @match       *://*.cn/*
 // @match       *://*.kz/*
 // @match       *://*.ua/*
-// @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ShowPasswords.js
-// @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ShowPasswords.js
+// @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
+// @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
 // @grant        none
 // ==/UserScript==
 
