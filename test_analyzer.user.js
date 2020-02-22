@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         TestAnalyzer
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @version      0.1.1
+// @description  Скрипт анализа тестов.
+// @author       URE_Community
 // @match        docs.google.com/forms*
 // @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/test_analyzer.meta.js
 // @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/test_analyzer.user.js
