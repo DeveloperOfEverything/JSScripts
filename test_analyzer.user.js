@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TestAnalyzer
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  Скрипт анализа тестов.
 // @author       URE_Community
 // @match        docs.google.com/forms*
