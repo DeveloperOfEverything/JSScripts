@@ -482,7 +482,7 @@
         while (csvString.indexOf('%451') > -1)
             csvString = csvString.replace('%451','%B8');
         var a = document.createElement('a');
-        a.href = 'data:attachment/csv,' + csvString
+        a.href = 'data:attachment/csv,' + csvString;
         a.target = '_blank';
         a.download = fileName;
 
