@@ -2,7 +2,7 @@
 // @name         TestAnalyzer
 // @namespace    http://tampermonkey.net/
 // @version      0.1.4
-// @description  Скрипт анализа тестов. От 26.02.2020 00:12.
+// @description  Скрипт анализа тестов. От 26.02.2020 00:19.
 // @author       URE_Community
 // @match        docs.google.com/forms*
 // @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/test_analyzer.meta.js
@@ -273,9 +273,13 @@
 
                     dataLine += "\r\n";
 
+                    var offset = 0;
+
+                    if (rules.offset != undefined) offset = rules.offset;
+
                     for (var j=0; j<q_u.length; j++)
                     {
-                        dataLine += (j+1) + ";" + q_u[j].question + ";" + q_u[j].answer + "\r\n";
+                        dataLine += (Math.max(0, j+1-offset)) + ";" + q_u[j].question + ";" + q_u[j].answer + "\r\n";
                     }
 
                     saveWinData("result.csv",dataLine);
