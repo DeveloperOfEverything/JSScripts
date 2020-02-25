@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         TestAnalyzer
 // @namespace    http://tampermonkey.net/
-// @version      0.1.3
-// @description  Скрипт анализа тестов.
+// @version      0.1.4
+// @description  Скрипт анализа тестов. От 26.02.2020 00:12.
 // @author       URE_Community
 // @match        docs.google.com/forms*
 // @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/test_analyzer.meta.js
@@ -211,6 +211,10 @@
                 var q_u = getQuestions();
                 var q_l = rules.questions;
 
+                var offset = 0;
+
+                if (rules.offset != undefined) offset = rules.offset;
+
                 if (q_u.length != q_l.length)
                 {
                     alert("Число вопросов в тесте ("+q_u.length+") не совпадает с числом в файле ключей ("+q_l.length+").");
@@ -245,7 +249,7 @@
 
                 for (var j=0; j<q_u.length; j++)
                 {
-                    textArea.value += (j+1) + "\t" + q_u[j].question + "\t" + q_u[j].answer + "\r\n";
+                    textArea.value += (Math.max(0, j+1-offset)) + "\t" + q_u[j].question + "\t" + q_u[j].answer + "\r\n";
                 }
 
                 var saveBtn = document.createElement('div');
