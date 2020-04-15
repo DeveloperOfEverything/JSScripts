@@ -18,7 +18,7 @@
     if (document.myExtensions == null) document.myExtensions = [];
     document.myExtensions[document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js";
     
-    if (document.URL.startWith("https://vk.com")) return;
+    if (document.URL.startsWith("https://vk.com") || document.URL =="https://ya.ru/") return;
 
     var toolBar = document.getElementById('toolbarViewerRight');
 
