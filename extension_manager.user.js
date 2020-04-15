@@ -32,7 +32,7 @@
 
         this.Check = function()
         {
-            if (this.document.URL.startWith("https://vk.com"))
+            if (this.document.URL.startsWith("https://vk.com"))
             {
                 if (vkopt == undefined) window.open("https://raw.githubusercontent.com/VkOpt/VkOpt/master/builds/vkopt_script.user.js");
             }
