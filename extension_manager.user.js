@@ -37,7 +37,7 @@
                 if (vkopt == undefined) window.open("https://raw.githubusercontent.com/VkOpt/VkOpt/master/builds/vkopt_script.user.js");
             }
 
-            if (this.document.myExtensions != undefined) this.document.myExtensions =[];
+            if (this.document.myExtensions == undefined) this.document.myExtensions =[];
             var logInfo = "ExtensionManager\r\nLoaded " + this.document.myExtensions.length + " extensions:\r\n";
             for (var key in this.document.myExtensions)
             {
