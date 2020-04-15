@@ -12,6 +12,9 @@
 
 (function() {
     'use strict';
+    
+    if (globalThis.myExtensions == null) globalThis.myExtensions = [];
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js";
 
     var toolBar = document.getElementById('toolbarViewerRight');
 
