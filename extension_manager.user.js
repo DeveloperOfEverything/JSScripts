@@ -37,22 +37,20 @@
                 if (vkopt == undefined) window.open("https://raw.githubusercontent.com/VkOpt/VkOpt/master/builds/vkopt_script.user.js");
             }
 
-            if (this.document.myExtensions != undefined)
+            if (this.document.myExtensions != undefined) this.document.myExtensions =[];
+            var logInfo = "ExtensionManager\r\nLoaded " + this.document.myExtensions.length + " extensions:\r\n";
+            for (var key in this.document.myExtensions)
             {
-                var logInfo = "ExtensionManager\r\nLoaded " + this.document.myExtensions.length + " extensions:\r\n";
-                for (var key in this.document.myExtensions)
+                logInfo += this.document.myExtensions[key] + "\r\n";
+            }
+
+            console.log(logInfo);
+
+            for (var key1 in extensions)
+            {
+                if (this.document.myExtensions.indexOf(extensions[key1]) == -1)
                 {
-                    logInfo += this.document.myExtensions[key] + "\r\n";
-                }
-                
-                console.log(logInfo);
-                
-                for (var key1 in extensions)
-                {
-                    if (this.document.myExtensions.indexOf(extensions[key1]) == -1)
-                    {
-                        window.open(extensions[key1]);
-                    }
+                    window.open(extensions[key1]);
                 }
             }
         }
