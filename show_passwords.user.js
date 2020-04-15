@@ -15,6 +15,7 @@
 // @match       *://*.cn/*
 // @match       *://*.kz/*
 // @match       *://*.ua/*
+// @match       chrome://newtab
 // @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
 // @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
 // @grant        none
