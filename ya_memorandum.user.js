@@ -12,6 +12,10 @@
 
 (function() {
     'use strict';
+    
+    if (this.document.myExtensions == undefined) this.document.myExtensions = [];
+    this.document.myExtensions[this.document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
+    
     window.onload = function()
     {
         var el = document.getElementsByClassName('doc-c-memorandum-url doc-c-i-bem doc-c-memorandum-url_js_inited');
