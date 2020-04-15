@@ -5,6 +5,8 @@
 // @description  Yandex memorandum unblocking for pirates
 // @author       DeveloperOfEverything
 // @match        https://yandex.ru/support/law/memorandum.html*
+// @match        https://ya.ru
+// @match        https://vk.com/*
 // @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js
 // @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js
 // @grant        none
@@ -15,6 +17,8 @@
     
     if (document.myExtensions == undefined) document.myExtensions = [];
     document.myExtensions[document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
+    
+    if (document.URL.startWith("https://vk.com") || document.URL == "https://ya.ru/") return;
     
     window.onload = function()
     {
