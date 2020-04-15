@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ExtensionManager
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  ExtensionManager for downloading JS scripts
 // @author       DeveloperOfEverything
 // @match        https://ya.ru
@@ -49,9 +49,9 @@
                 
                 for (var key1 in extensions)
                 {
-                    if (this.document.myExtensions.indexOf(extensions[key]) == -1)
+                    if (this.document.myExtensions.indexOf(extensions[key1]) == -1)
                     {
-                        window.open(extensions[key]);
+                        window.open(extensions[key1]);
                     }
                 }
             }
@@ -62,12 +62,15 @@
 
     globalThis.extensionManager = new ExtensionManager(document);
 
-    try
+    window.onload = function()
     {
-        setTimeout(globalThis.extensionManager.Check(), 1000);
-    }
-    catch(err)
-    {
+        try
+        {
+            setTimeout(globalThis.extensionManager.Check(), 1000);
+        }
+        catch(err)
+        {
+        }
     }
 
 })();
