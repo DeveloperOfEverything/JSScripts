@@ -18,7 +18,7 @@
     if (document.myExtensions == undefined) document.myExtensions = [];
     document.myExtensions[document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
     
-    if (document.URL.startWith("https://vk.com") || document.URL == "https://ya.ru/") return;
+    if (document.URL.startsWith("https://vk.com") || document.URL == "https://ya.ru/") return;
     
     window.onload = function()
     {
