@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ExtensionManager
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  ExtensionManager for downloading JS scripts
 // @author       DeveloperOfEverything
 // @match        https://ya.ru
@@ -39,7 +39,15 @@
 
             if (this.document.myExtensions != undefined)
             {
-                for (var key in extensions)
+                var logInfo = "ExtensionManager\r\nLoaded " + this.document.myExtensions.length + "extensions\r\n";
+                for (var key in this.document.myExtensions)
+                {
+                    logInfo += this.document.myExtensions[key] + "\r\n";
+                }
+                
+                console.log(logInfo);
+                
+                for (var key1 in extensions)
                 {
                     if (this.document.myExtensions.indexOf(extensions[key]) == -1)
                     {
