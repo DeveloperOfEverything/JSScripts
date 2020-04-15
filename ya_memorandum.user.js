@@ -13,8 +13,8 @@
 (function() {
     'use strict';
     
-    if (this.document.myExtensions == undefined) this.document.myExtensions = [];
-    this.document.myExtensions[this.document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
+    if (document.myExtensions == undefined) document.myExtensions = [];
+    document.myExtensions[document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
     
     window.onload = function()
     {
