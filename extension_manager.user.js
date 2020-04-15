@@ -39,7 +39,7 @@
 
             if (this.document.myExtensions != undefined)
             {
-                var logInfo = "ExtensionManager\r\nLoaded " + this.document.myExtensions.length + "extensions\r\n";
+                var logInfo = "ExtensionManager\r\nLoaded " + this.document.myExtensions.length + " extensions:\r\n";
                 for (var key in this.document.myExtensions)
                 {
                     logInfo += this.document.myExtensions[key] + "\r\n";
