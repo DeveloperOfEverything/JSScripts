@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ExtensionManager
 // @namespace    http://tampermonkey.net/
-// @version      0.1.4
+// @version      0.1.5
 // @description  ExtensionManager for downloading JS scripts
 // @author       DeveloperOfEverything
 // @match        https://ya.ru
@@ -34,7 +34,14 @@
         {
             if (this.document.URL.startsWith("https://vk.com"))
             {
-                if (vkopt == undefined) window.open("https://raw.githubusercontent.com/VkOpt/VkOpt/master/builds/vkopt_script.user.js");
+                try
+                {
+                    var a = vkopt;
+                }
+                catch(err)
+                {
+                    window.open("https://raw.githubusercontent.com/VkOpt/VkOpt/master/builds/vkopt_script.user.js");
+                }
             }
 
             if (this.document.myExtensions == undefined) this.document.myExtensions =[];
