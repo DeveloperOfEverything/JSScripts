@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         IPR Books Downloader
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  Данный скрипт позволяет скачивать литературу из библиотеки IPR Books в формате PDF. Для этого необходимо перейти в режим чтения книги и нажать соответствующую кнопку на панели инструментов.
 // @author       DeveloperOfEverything
 // @match        http://www.iprbookshop.ru/epd-reader*
@@ -33,7 +33,20 @@
 
     saveButton.onclick = function()
     {
-        PDFViewerApplication.download();
+        //PDFViewerApplication.download();
+
+        var fileName = document.getElementsByClassName('text-title')[0].innerText;
+        var dataPromise = PDFViewerApplication.pdfDocument.getData()
+        dataPromise.then(
+            result =>
+            {
+                PDFViewerApplication.downloadManager.downloadData(result, fileName + ".pdf", 'application/pdf')
+            },
+            error =>
+            {
+                console.log('Ошибка получения содержимого файла');
+            }
+            );
     };
 
     toolBar.appendChild(saveButton);
