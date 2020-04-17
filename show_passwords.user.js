@@ -97,8 +97,6 @@
                 }
             }
         }
-
-        console.log("Found " + passInputs.length);
     }
 
     var onLoad = function() {
