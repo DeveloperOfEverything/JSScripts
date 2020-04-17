@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ShowPasswords
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  Отображает скрытые сохраненные в браузере пароля по щелчук колесика мыши по полю ввода пароля.
 // @author       DeveloperOfEverything
 // @match       *://*.com/*
