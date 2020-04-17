@@ -18,6 +18,7 @@
 
     if (document.myExtensions == null) document.myExtensions = [];
     document.myExtensions[document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/yandex_minimize.user.js";
+    if (document.URL.startsWith("https://vk.com") || document.URL =="https://ya.ru/") return;
     
     function Correction()
     {
