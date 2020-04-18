@@ -27,7 +27,6 @@
         for (var i=0; i < el.length; i++)
         {
             var text = el[i].attributes['data-text'].value;
-
             el[i].outerHTML = '<a href="' + text + '">' + text + '</a>';
         }
     }
