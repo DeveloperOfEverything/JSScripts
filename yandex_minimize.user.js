@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex Minimize
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.1
 // @description  Remove unuseful blocks
 // @author       DeveloperOfEverything
 // @match        https://yandex.ru/
@@ -22,11 +22,13 @@
     
     function Correction()
     {
-        var main = document.getElementsByClassName('Cd rows')[0];
+        var main = document.getElementsByClassName('rows-wrapper')[0];
+        main = main.children[1];
         main.removeChild(main.children[3]);
         main.removeChild(main.children[3]);
 
-        var serv = document.getElementsByClassName('DM main widgets')[0];
+        var serv = main.children[2];//document.getElementsByClassName('DM main widgets')[0];
+        serv = serv.children[0];
         while (serv.children[0].tagName.toLowerCase() != 'div')
             serv = serv.children[0];
 
