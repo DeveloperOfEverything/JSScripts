@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex memorandum unblocking
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.1
 // @description  Yandex memorandum unblocking for pirates
 // @author       DeveloperOfEverything
 // @match        https://yandex.ru/support/law/memorandum.html*
@@ -28,7 +28,7 @@
         {
             var text = el[i].attributes['data-text'].value;
 
-            el[i].outerHTML = text;
+            el[i].outerHTML = '<a href="' + text + '">' + text + '</a>';
         }
     }
 })();
