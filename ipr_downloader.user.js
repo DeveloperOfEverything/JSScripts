@@ -6,7 +6,7 @@
 // @author       DeveloperOfEverything
 // @match        http://www.iprbookshop.ru/epd-reader*
 // @match        https://ya.ru/
-// @match        https://vk.com/*
+// @match        https://vk.com/feed
 // @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js
 // @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js
 // @grant        none
