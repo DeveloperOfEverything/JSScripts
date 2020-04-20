@@ -13,8 +13,8 @@
 (function() {
     'use strict';
     
-    if (document.myExtensions == null) document.myExtensions = [];
-    document.myExtensions[document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js";
+    if (globalThis.myExtensions == null) globalThis.myExtensions = [];
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js";
 
     var inputs = [];
     var passInputs = [];
