@@ -6,7 +6,7 @@
 // @author       DeveloperOfEverything
 // @match        https://yandex.ru/support/law/memorandum.html*
 // @match        https://ya.ru
-// @match        https://vk.com/*
+// @match        https://vk.com/feed
 // @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js
 // @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js
 // @grant        none
