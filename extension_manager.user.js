@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         ExtensionManager
 // @namespace    http://tampermonkey.net/
-// @version      0.1.6
+// @version      0.1.7
 // @description  ExtensionManager for downloading JS scripts
 // @author       DeveloperOfEverything
 // @match        https://ya.ru
-// @match        https://vk.com/*
+// @match        https://vk.com/feed
 // @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/extension_manager.user.js
 // @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/extension_manager.user.js
 // @grant        none
