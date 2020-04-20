@@ -1,21 +1,10 @@
 // ==UserScript==
 // @name         ShowPasswords
 // @namespace    http://tampermonkey.net/
-// @version      0.1.3
+// @version      0.1.4
 // @description  Отображает скрытые сохраненные в браузере пароля по щелчук колесика мыши по полю ввода пароля.
 // @author       DeveloperOfEverything
-// @match       *://*.com/*
-// @match       *://*.me/*
-// @match       *://*.net/*
-// @match       *://*.ru/*
-// @match       *://*.org/*
-// @match       *://*.info/*
-// @match       *://*.nz/*
-// @match       *://*.en/*
-// @match       *://*.cn/*
-// @match       *://*.kz/*
-// @match       *://*.ua/*
-// @match       chrome://newtab
+// @match        *://*/*
 // @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
 // @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
 // @grant        none
