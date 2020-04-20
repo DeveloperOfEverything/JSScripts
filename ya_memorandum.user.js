@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex memorandum unblocking
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  Yandex memorandum unblocking for pirates
 // @author       DeveloperOfEverything
 // @match        https://yandex.ru/support/law/memorandum.html*
