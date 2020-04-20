@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex memorandum unblocking
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Yandex memorandum unblocking for pirates
 // @author       DeveloperOfEverything
 // @match        https://yandex.ru/support/law/memorandum.html*
@@ -15,8 +15,8 @@
 (function() {
     'use strict';
     
-    if (document.myExtensions == undefined) document.myExtensions = [];
-    document.myExtensions[document.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
+    if (globalThis.myExtensions == undefined) globalThis.myExtensions = [];
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
     
     if (document.URL.startsWith("https://vk.com") || document.URL == "https://ya.ru/") return;
     
