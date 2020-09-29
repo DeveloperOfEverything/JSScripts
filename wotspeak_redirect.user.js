@@ -10,6 +10,9 @@
 
 (function() {
     'use strict';
+    
+    if (globalThis.myExtensions == null) globalThis.myExtensions = [];
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/wotspeak_redirect.user.js";
 
     var scripts = document.getElementsByTagName('script');
     var i=0;
