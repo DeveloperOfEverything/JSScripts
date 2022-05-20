@@ -7,8 +7,8 @@
 // @match        https://yandex.ru/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=yandex.ru
 // @grant        none
-// @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
-// @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
+// @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/no_yandex_ad.user.js
+// @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/no_yandex_ad.user.js
 // ==/UserScript==
 
 (function() {
