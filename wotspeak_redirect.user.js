@@ -16,7 +16,7 @@
     'use strict';
     
     if (globalThis.myExtensions == null) globalThis.myExtensions = [];
-    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js";
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/wotspeak_redirect.user.js";
     
     if (document.URL.startsWith("https://vk.com") || document.URL =="https://ya.ru/") return;
     // Your code here...
