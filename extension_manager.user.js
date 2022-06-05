@@ -17,7 +17,7 @@
     var extensions = [
             "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js", //ShowPassword
             "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js", //IPR Downloader
-            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js"  //Yandex memorandum unblocking
+            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js",  //Yandex memorandum unblocking
             "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/wotspeak_redirect.user.js"  //Yandex memorandum unblocking
         ];
 
