@@ -6,6 +6,8 @@
 // @author       You
 // @match        https://wotspeak.org/engine/dwn_just2.php*
 // @grant        none
+// @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/wotspeak_redirect.user.js
+// @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/wotspeak_redirect.user.js
 // ==/UserScript==
 
 (function() {
