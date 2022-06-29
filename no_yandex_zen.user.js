@@ -6,8 +6,8 @@
 // @author       You
 // @match        https://yandex.ru/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=yandex.ru
-// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
-// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
+// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
+// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -17,7 +17,7 @@
     // Your code here...
     
     if (globalThis.myExtensions == null) globalThis.myExtensions = [];
-    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/no_yandex_zen.user.js";
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js";
 
     window.addEventListener('load', function() {
         globalThis.zenFeed = document.getElementsByClassName('zen-page__feed')[0];
