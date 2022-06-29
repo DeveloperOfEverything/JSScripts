@@ -15,11 +15,11 @@
     'use strict';
 
     var extensions = [
-            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js", //ShowPassword
-            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js", //IPR Downloader
-            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js", //Yandex memorandum unblocking
-            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/wotspeak_redirect.user.js", //Disable timer on download page
-            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js"
+            "https://github.com/DeveloperOfEverything/JSScripts/raw/master/show_passwords.user.js", //ShowPassword
+            "https://github.com/DeveloperOfEverything/JSScripts/raw/master/ipr_downloader.user.js", //IPR Downloader
+            "https://github.com/DeveloperOfEverything/JSScripts/raw/master/ya_memorandum.user.js", //Yandex memorandum unblocking
+            "https://github.com/DeveloperOfEverything/JSScripts/raw/master/wotspeak_redirect.user.js", //Disable timer on download page
+            "https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js"
         ];
 
     var ExtensionManager = function(document)
