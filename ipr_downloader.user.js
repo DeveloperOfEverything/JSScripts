@@ -7,8 +7,8 @@
 // @match        http://www.iprbookshop.ru/epd-reader*
 // @match        https://ya.ru/
 // @match        https://vk.com/feed
-// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js
-// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js
+// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/ipr_downloader.user.js
+// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/ipr_downloader.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -16,7 +16,7 @@
     'use strict';
     
     if (globalThis.myExtensions == null) globalThis.myExtensions = [];
-    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js";
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://github.com/DeveloperOfEverything/JSScripts/raw/master/ipr_downloader.user.js";
     
     if (document.URL.startsWith("https://vk.com") || document.URL =="https://ya.ru/") return;
 
