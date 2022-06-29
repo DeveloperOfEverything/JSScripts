@@ -5,6 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://yandex.ru/
+// @match        https://ya.ru/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=yandex.ru
 // @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
 // @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
