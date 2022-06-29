@@ -6,8 +6,8 @@
 // @author       You
 // @match        https://yandex.ru/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=yandex.ru
-// @updateUrl    
-// @downloadUrl  
+// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
+// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js
 // @grant        none
 // ==/UserScript==
 
