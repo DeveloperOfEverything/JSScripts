@@ -6,8 +6,8 @@
 // @author       DeveloperOfEverything
 // @match        https://ya.ru
 // @match        https://vk.com/feed
-// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/extension_manager.user.js
-// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/extension_manager.user.js
+// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/extension_manager.user.js
+// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/extension_manager.user.js
 // @grant        none
 // ==/UserScript==
 
