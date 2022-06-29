@@ -19,6 +19,7 @@
             "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ipr_downloader.user.js", //IPR Downloader
             "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js", //Yandex memorandum unblocking
             "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/wotspeak_redirect.user.js" //Disable timer on download page
+            "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js"
         ];
 
     var ExtensionManager = function(document)
