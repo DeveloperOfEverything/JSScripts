@@ -15,17 +15,9 @@
     'use strict';
 
     // Your code here...
-
-    var onLoad = function() {
-
-        document.body.addEventListener("DOMNodeInserted",function(e){ clearRaws(); },false);
-        //document.body.addEventListener("DOMNodeRemoved",function(e){ elementDeleted(); },false);
-
-        document.body.addEventListener("DOMNodeInsertedIntoDocument",function(e){ clearRaws(); },false);
-        //document.body.addEventListener("DOMNodeRemovedFromDocument",function(e){ elementDeleted(); },false);
-
-        clearRaws();
-    };
+    
+    if (globalThis.myExtensions == null) globalThis.myExtensions = [];
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/no_yandex_zen.user.js";
 
     window.addEventListener('load', function() {
         globalThis.zenFeed = document.getElementsByClassName('zen-page__feed')[0];
@@ -33,6 +25,5 @@
         globalThis.news = document.getElementById('zen-row-0');
         zenFeed.appendChild(news);
         zenFeed.removeChild(zenDiv);
-        onLoad();
     }, false);
 })();
