@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ExtensionManager
 // @namespace    http://tampermonkey.net/
-// @version      0.1.9
+// @version      0.1.10
 // @description  ExtensionManager for downloading JS scripts
 // @author       DeveloperOfEverything
 // @match        https://ya.ru
