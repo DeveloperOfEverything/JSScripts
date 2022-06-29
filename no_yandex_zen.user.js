@@ -17,14 +17,19 @@
 
     // Your code here...
     
-    if (globalThis.myExtensions == null) globalThis.myExtensions = [];
-    globalThis.myExtensions[globalThis.myExtensions.length] = "https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js";
-
-    window.addEventListener('load', function() {
-        globalThis.zenFeed = document.getElementsByClassName('zen-page__feed')[0];
-        globalThis.zenDiv = document.getElementsByClassName('feed _column-count_2 _rubbery-type_null _is-morda-desktop _is-desktop-redesign _grid-type_fixed _is-redesign-desktop-cards-has-hover-shadows')[0];
-        globalThis.news = document.getElementById('zen-row-0');
-        zenFeed.appendChild(news);
-        zenFeed.removeChild(zenDiv);
-    }, false);
+    if (this.document.URL.startsWith("https://ya.ru"))
+    {
+        if (globalThis.myExtensions == null) globalThis.myExtensions = [];
+        globalThis.myExtensions[globalThis.myExtensions.length] = "https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js";
+    }
+    else
+    {
+        window.addEventListener('load', function() {
+            globalThis.zenFeed = document.getElementsByClassName('zen-page__feed')[0];
+            globalThis.zenDiv = document.getElementsByClassName('feed _column-count_2 _rubbery-type_null _is-morda-desktop _is-desktop-redesign _grid-type_fixed _is-redesign-desktop-cards-has-hover-shadows')[0];
+            globalThis.news = document.getElementById('zen-row-0');
+            zenFeed.appendChild(news);
+            zenFeed.removeChild(zenDiv);
+        }, false);
+    }
 })();
