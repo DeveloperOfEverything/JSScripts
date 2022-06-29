@@ -7,8 +7,8 @@
 // @match        https://yandex.ru/support/law/memorandum.html*
 // @match        https://ya.ru
 // @match        https://vk.com/feed
-// @updateUrl    https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js
-// @downloadUrl  https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js
+// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/ya_memorandum.user.js
+// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/ya_memorandum.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -16,7 +16,7 @@
     'use strict';
     
     if (globalThis.myExtensions == undefined) globalThis.myExtensions = [];
-    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/ya_memorandum.user.js";
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://github.com/DeveloperOfEverything/JSScripts/raw/master/ya_memorandum.user.js";
     
     if (document.URL.startsWith("https://vk.com") || document.URL == "https://ya.ru/") return;
     
