@@ -5,8 +5,8 @@
 // @description  Отображает скрытые сохраненные в браузере пароля по щелчук колесика мыши по полю ввода пароля.
 // @author       DeveloperOfEverything
 // @match        *://*/*
-// @updateUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
-// @downloadUrl	https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js
+// @updateUrl	 https://github.com/DeveloperOfEverything/JSScripts/raw/master/show_passwords.user.js
+// @downloadUrl	 https://github.com/DeveloperOfEverything/JSScripts/raw/master/show_passwords.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -14,7 +14,7 @@
     'use strict';
     
     if (globalThis.myExtensions == null) globalThis.myExtensions = [];
-    globalThis.myExtensions[globalThis.myExtensions.length] = "https://raw.githubusercontent.com/DeveloperOfEverything/JSScripts/master/show_passwords.user.js";
+    globalThis.myExtensions[globalThis.myExtensions.length] = "https://github.com/DeveloperOfEverything/JSScripts/raw/master/show_passwords.user.js";
 
     var inputs = [];
     var passInputs = [];
