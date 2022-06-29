@@ -17,7 +17,7 @@
 
     // Your code here...
     
-    if (this.document.URL.startsWith("https://ya.ru"))
+    if (document.URL.startsWith("https://ya.ru"))
     {
         if (globalThis.myExtensions == null) globalThis.myExtensions = [];
         globalThis.myExtensions[globalThis.myExtensions.length] = "https://github.com/DeveloperOfEverything/JSScripts/raw/master/no_yandex_zen.user.js";
