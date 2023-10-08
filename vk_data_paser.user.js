@@ -6,6 +6,8 @@
 // @author       You
 // @match        https://vk.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=vk.com
+// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/vk_data_paser.user.js
+// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/vk_data_paser.user.js
 // @grant        none
 // ==/UserScript==
 
