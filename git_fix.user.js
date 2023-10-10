@@ -6,6 +6,8 @@
 // @author       You
 // @match        http://skgit:8080/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=undefined.skgit
+// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/git_fix.user.js
+// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/git_fix.user.js
 // @grant        none
 // ==/UserScript==
 
