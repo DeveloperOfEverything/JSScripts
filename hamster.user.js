@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Hamster Clicker
 // @namespace    http://tampermonkey.net/
-// @version      2024-08-02
+// @version      0.3
 // @description  try to take over the world!
-// @author       You
+// @author       NONE_NAME
 // @match        https://hamsterkombatgame.io/*
 // @icon         https://hamsterkombatgame.io/favicon.ico
 // @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/hamster.user.js
@@ -73,7 +73,12 @@
         if (!doClicks) return;
         if (btn != undefined && getCurrentEnergy() > 10)
             btn.dispatchEvent(new PointerEvent('pointerup'));
-        setTimeout(function() { clicker(); }, 250);
+            btn.dispatchEvent(new PointerEvent('pointerup'));
+            btn.dispatchEvent(new PointerEvent('pointerup'));
+            btn.dispatchEvent(new PointerEvent('pointerup'));
+            btn.dispatchEvent(new PointerEvent('pointerup'));
+            btn.dispatchEvent(new PointerEvent('pointerup'));
+        setTimeout(function() { clicker(); }, 2000);
     }
 
     var elementAdded = function()
@@ -93,6 +98,7 @@
             startBtn.style["top"] = "250px";
             startBtn.style["width"] = "50px";
             startBtn.style["height"] = "50px";
+            startBtn.innerHTML = "Click me!";
             startBtn.onclick = switchState;
             document.querySelector(".page").appendChild(startBtn);
 
