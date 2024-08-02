@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hamster Clicker
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  try to take over the world!
 // @author       NONE_NAME
 // @match        https://hamsterkombatgame.io/*
@@ -30,6 +30,7 @@
     };
 
     var btn;
+    var switchBtn;
     var found = false;
     var doClicks = false;
     var stopValue = 200;
@@ -54,6 +55,9 @@
     {
         if (doClicks) stopClicker();
         else startClicker();
+
+        alert("Кликер " + doClicks ? "запущен" : "остановлен");
+        switchBtn.innerHTML = doClicks ? "Стоп" : "Старт"
     }
 
     globalThis.stopClicker = function()
@@ -91,15 +95,15 @@
             found = true;
             btn = btns[0];
 
-            var startBtn = document.createElement('button');
-            startBtn.style["position"] = "absolute";
-            startBtn.style["left"] = "20px";
-            startBtn.style["top"] = "250px";
-            startBtn.style["width"] = "50px";
-            startBtn.style["height"] = "50px";
-            startBtn.innerHTML = "Click me!";
-            startBtn.onclick = switchState;
-            document.querySelector(".page").appendChild(startBtn);
+            switchBtn = document.createElement('button');
+            switchBtn.style["position"] = "absolute";
+            switchBtn.style["left"] = "20px";
+            switchBtn.style["top"] = "250px";
+            switchBtn.style["width"] = "50px";
+            switchBtn.style["height"] = "50px";
+            switchBtn.innerHTML = "Старт";
+            switchBtn.onclick = switchState;
+            document.querySelector(".page").appendChild(switchBtn);
 
             clicker();
         }
