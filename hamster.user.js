@@ -6,6 +6,8 @@
 // @author       You
 // @match        https://hamsterkombatgame.io/*
 // @icon         https://hamsterkombatgame.io/favicon.ico
+// @updateUrl    https://github.com/DeveloperOfEverything/JSScripts/raw/master/hamster.user.js
+// @downloadUrl  https://github.com/DeveloperOfEverything/JSScripts/raw/master/hamster.user.js
 // @grant        none
 // ==/UserScript==
 
