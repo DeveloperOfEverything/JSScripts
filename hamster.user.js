@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hamster Clicker
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  try to take over the world!
 // @author       NONE_NAME
 // @match        https://hamsterkombatgame.io/*
@@ -32,6 +32,8 @@
     var btn;
     var found = false;
     var doClicks = false;
+    var stopValue = 200;
+    var stepSize = 100;
 
     var getEnergy = function()
     {
@@ -71,14 +73,11 @@
     var clicker = function()
     {
         if (!doClicks) return;
-        if (btn != undefined && getCurrentEnergy() > 10)
+        if (btn != undefined && getCurrentEnergy() > stopValue)
+
+        for (var i=0; i<stepSize; i++)
             btn.dispatchEvent(new PointerEvent('pointerup'));
-            btn.dispatchEvent(new PointerEvent('pointerup'));
-            btn.dispatchEvent(new PointerEvent('pointerup'));
-            btn.dispatchEvent(new PointerEvent('pointerup'));
-            btn.dispatchEvent(new PointerEvent('pointerup'));
-            btn.dispatchEvent(new PointerEvent('pointerup'));
-        setTimeout(function() { clicker(); }, 2000);
+        setTimeout(function() { clicker(); }, 250);
     }
 
     var elementAdded = function()
