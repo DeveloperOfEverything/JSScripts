@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hamster Clicker
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  try to take over the world!
 // @author       NONE_NAME
 // @match        https://hamsterkombatgame.io/*
@@ -41,6 +41,13 @@
         return document.querySelector(".user-tap-energy").querySelector("p").innerHTML.split('/');
     }
 
+    var getButton = function()
+    {
+        var btns = document.getElementsByClassName('user-tap-button button');
+        if (btns.length > 0) return btns[0];
+        return undefined;
+    }
+
     var getMaxEnergy = function()
     {
         return parseInt(getEnergy()[1]);
@@ -56,7 +63,7 @@
         if (doClicks) stopClicker();
         else startClicker();
 
-        alert("Кликер " + doClicks ? "запущен" : "остановлен");
+        alert(doClicks ? "Кликер запущен" : "Кликер остановлен");
         switchBtn.innerHTML = doClicks ? "Стоп" : "Старт"
     }
 
@@ -77,42 +84,32 @@
     var clicker = function()
     {
         if (!doClicks) return;
-        if (btn != undefined && getCurrentEnergy() > stopValue)
 
-        for (var i=0; i<stepSize; i++)
-            btn.dispatchEvent(new PointerEvent('pointerup'));
+        var btn = getButton();
+        if (btn != undefined && getCurrentEnergy() > stopValue)
+            for (var i=0; i<stepSize; i++)
+                btn.dispatchEvent(new PointerEvent('pointerup'));
+
         setTimeout(function() { clicker(); }, 250);
     }
 
-    var elementAdded = function()
-    {
-        if (found) return;
-
-        var btns = document.getElementsByClassName('user-tap-button button');
-
-        if (btns.length > 0)
+    var onLoad = function() {
+        var page = document.querySelector(".page");
+        if (page == undefined)
         {
-            found = true;
-            btn = btns[0];
-
-            switchBtn = document.createElement('button');
-            switchBtn.style["position"] = "absolute";
-            switchBtn.style["left"] = "20px";
-            switchBtn.style["top"] = "250px";
-            switchBtn.style["width"] = "50px";
-            switchBtn.style["height"] = "50px";
-            switchBtn.innerHTML = "Старт";
-            switchBtn.onclick = switchState;
-            document.querySelector(".page").appendChild(switchBtn);
-
-            clicker();
+            setTimeout(onLoad, 1000);
+            return;
         }
 
-        setTimeout(elementAdded, 1000);
-    }
-
-    var onLoad = function() {
-        elementAdded();
+        switchBtn = document.createElement('button');
+        switchBtn.style["position"] = "absolute";
+        switchBtn.style["left"] = "20px";
+        switchBtn.style["top"] = "250px";
+        switchBtn.style["width"] = "50px";
+        switchBtn.style["height"] = "50px";
+        switchBtn.innerHTML = "Старт";
+        switchBtn.onclick = switchState;
+        document.querySelector(".page").appendChild(switchBtn);
     };
 
     window.addEventListener('load', function() {
