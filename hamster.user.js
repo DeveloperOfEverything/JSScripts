@@ -58,32 +58,53 @@
         return parseInt(getEnergy()[0]);
     }
 
+    var getState = function()
+    {
+        return localStorage.getItem('enableClicker') == "true";
+    }
+
+    var setState = function(state)
+    {
+        localStorage.setItem('enableClicker', state);
+        updateSwitchText();
+    }
+
     var switchState = function()
     {
-        if (doClicks) stopClicker();
+        if (getState()) stopClicker();
         else startClicker();
 
-        alert(doClicks ? "Кликер запущен" : "Кликер остановлен");
-        switchBtn.innerHTML = doClicks ? "Стоп" : "Старт"
+        alert(getState() ? "Кликер запущен" : "Кликер остановлен");
+        switchBtn.innerHTML = getState() ? "Стоп" : "Старт"
     }
 
     globalThis.stopClicker = function()
     {
-        doClicks = false;
+        setState(false);
     }
 
     globalThis.startClicker = function()
     {
-        if (!doClicks)
+        if (!getState())
         {
-            doClicks = true;
+            setState(true);
             clicker();
         }
     }
 
+    var updateSwitchText = function()
+    {
+        if (switchBtn == undefined) return;
+        if (getState()) switchBtn.innerText = "Стоп";
+        else switchBtn.innerText = "Старт";
+    }
+
     var clicker = function()
     {
-        if (!doClicks) return;
+        updateSwitchText();
+
+        if (!getState())
+            return;
 
         var btn = getButton();
         if (btn != undefined && getCurrentEnergy() > stopValue)
@@ -107,12 +128,13 @@
         switchBtn.style["top"] = "250px";
         switchBtn.style["width"] = "50px";
         switchBtn.style["height"] = "50px";
-        switchBtn.innerHTML = "Старт";
         switchBtn.onclick = switchState;
         document.querySelector(".page").appendChild(switchBtn);
+        updateSwitchText();
     };
 
     window.addEventListener('load', function() {
+        if (getState()) clicker();
         onLoad();
     }, false);
 })();
